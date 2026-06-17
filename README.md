@@ -1,4 +1,4 @@
-# AgentEdge — realtor marketing-kit storefront
+# Abc Ore Pro — realtor marketing-kit storefront
 
 A fast, static, single-page storefront that sells three low-ticket digital products to
 real estate agents, presented as **property-style "listings"** plus a discounted bundle.
@@ -67,9 +67,7 @@ python3 -m http.server 8099   # then open http://localhost:8099/
 
 ## Open TODOs before/at launch
 
-1. **Brand name** — displayed as the placeholder **`AgentEdge`**. The brief answer "abc ore
-   pro" read like voice-garble, so it was not used. To change: find/replace `AgentEdge` in
-   `index.html` (header, footer, `<title>`, OG/Twitter tags) and re-run `tools/gen_meta_images.py`.
+1. **Brand name** — set to **Abc Ore Pro** (from the domain abcorepro.com). ✓ Resolved.
 2. **`TODO_CHECKOUT_LINK` ×4** (one per HTML comment, by product). When a real deliverable
    exists for a product, swap its disabled button for a live link:
    ```html
@@ -82,6 +80,12 @@ python3 -m http.server 8099   # then open http://localhost:8099/
 
 ## Deploy (GitHub Pages)
 
-This repo deploys to **https://600589mbm-beep.github.io/realtor-storefront/** from the
-`main` branch root. See the deploy section of the launch summary for the exact commands.
-No custom domain (so no `CNAME` file).
+Deploys from the `main` branch root to the custom domain **https://abcorepro.com/**
+(the `CNAME` file holds `abcorepro.com`). DNS records to set at the registrar:
+
+- Apex `A` records → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+- Apex `AAAA` (optional, IPv6) → `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
+- `www` `CNAME` → `600589mbm-beep.github.io`
+
+Until DNS propagates, the site also serves at `https://600589mbm-beep.github.io/realtor-storefront/`.
+After the domain verifies, enable **Enforce HTTPS** in repo Settings → Pages.

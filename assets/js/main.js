@@ -1,4 +1,4 @@
-/* AgentEdge — minimal progressive enhancement. No storage, no dependencies. */
+/* Abc Ore Pro — minimal progressive enhancement. No storage, no dependencies. */
 (function () {
   "use strict";
 

@@ -72,7 +72,7 @@ d.rectangle([0, 0, W, 10], fill=GOLD)
 # brand row
 mark = house_mark(96)
 og.paste(mark, (80, 64), mark)
-d.text((196, 78), "AgentEdge", font=font(FB, 64), fill=WHITE)
+d.text((196, 84), "Abc Ore Pro", font=font(FB, 60), fill=WHITE)
 
 # headline
 d.text((80, 220), "Agent tools, listed like", font=font(FB, 78), fill=WHITE)
