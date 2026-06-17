@@ -28,23 +28,17 @@ def font(path, size):
         return ImageFont.load_default()
 
 def house_mark(size):
-    """Navy rounded tile with portal-blue roof, white body, gold dot."""
+    """Navy rounded tile with portal-blue solid roof, white body, gold door."""
     s = size
     im = Image.new("RGBA", (s, s), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
-    r = int(s * 0.22)
-    d.rounded_rectangle([0, 0, s - 1, s - 1], radius=r, fill=NAVY)
-    lw = max(2, int(s * 0.08))
-    # roof
-    d.line([(s*0.22, s*0.50), (s*0.50, s*0.25), (s*0.78, s*0.50)],
-           fill=BLUE, width=lw, joint="curve")
-    # body
-    d.rounded_rectangle([s*0.31, s*0.50, s*0.69, s*0.78], radius=max(1, int(s*0.04)), fill=WHITE)
-    # door
-    d.rounded_rectangle([s*0.45, s*0.61, s*0.55, s*0.78], radius=max(1, int(s*0.015)), fill=NAVY)
-    # gold dot
-    rr = s * 0.11
-    d.ellipse([s*0.72 - rr, s*0.31 - rr, s*0.72 + rr, s*0.31 + rr], fill=GOLD)
+    d.rounded_rectangle([0, 0, s - 1, s - 1], radius=s * 0.234, fill=NAVY)
+    # roof (solid triangle with eaves overhang)
+    d.polygon([(s*0.172, s*0.547), (s*0.5, s*0.258), (s*0.828, s*0.547)], fill=BLUE)
+    # house body
+    d.rounded_rectangle([s*0.297, s*0.516, s*0.703, s*0.773], radius=max(1, s*0.039), fill=WHITE)
+    # gold door
+    d.rounded_rectangle([s*0.4375, s*0.609, s*0.5625, s*0.773], radius=max(1, s*0.022), fill=GOLD)
     return im
 
 # ---------- favicons ----------

@@ -1,11 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Abc Ore Pro">
-  <rect width="64" height="64" rx="14" fill="#0B2440"/>
-  <!-- house roof -->
-  <path d="M14 32 L32 16 L50 32" fill="none" stroke="#2563EB" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect width="64" height="64" rx="15" fill="#0B2440"/>
+  <!-- roof (solid, with eaves overhang) -->
+  <path d="M11 35 L32 16.5 L53 35 Z" fill="#2563EB"/>
   <!-- house body -->
-  <rect x="20" y="32" width="24" height="18" rx="2.5" fill="#FFFFFF"/>
-  <!-- door -->
-  <rect x="29" y="39" width="6" height="11" rx="1" fill="#0B2440"/>
-  <!-- gold price-tag dot -->
-  <circle cx="46" cy="20" r="7" fill="#E6A93B"/>
+  <rect x="19" y="33" width="26" height="16.5" rx="2.5" fill="#FFFFFF"/>
+  <!-- gold door -->
+  <rect x="28" y="39" width="8" height="10.5" rx="1.4" fill="#E6A93B"/>
 </svg>
