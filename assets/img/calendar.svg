@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="A 90-Day Content Calendar shown as three monthly grids of posting days">
+  <defs>
+    <linearGradient id="cBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EAF1FE"/><stop offset="1" stop-color="#D6E4FC"/>
+    </linearGradient>
+    <filter id="cSh" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0B2440" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="640" height="400" fill="url(#cBg)"/>
+  <text x="44" y="60" font-family="'Plus Jakarta Sans',system-ui,sans-serif" font-size="27" font-weight="700" fill="#0B2440">90-Day Content Calendar</text>
+  <text x="44" y="88" font-family="'DM Sans',system-ui,sans-serif" font-size="16" fill="#52617A">90 days of captions + a posting schedule</text>
+
+  <!-- three month cards -->
+  <g font-family="'Plus Jakarta Sans',system-ui,sans-serif">
+    <!-- card generator: 3 columns -->
+    <g transform="translate(44,118)"><g filter="url(#cSh)"><rect width="172" height="244" rx="18" fill="#FFFFFF" stroke="#DCE5F2" stroke-width="2"/></g><rect width="172" height="44" rx="18" fill="#2563EB"/><rect y="26" width="172" height="18" fill="#2563EB"/><text x="18" y="29" font-size="15" font-weight="700" fill="#FFFFFF">Month 1</text></g>
+    <g transform="translate(234,118)"><g filter="url(#cSh)"><rect width="172" height="244" rx="18" fill="#FFFFFF" stroke="#DCE5F2" stroke-width="2"/></g><rect width="172" height="44" rx="18" fill="#12386B"/><rect y="26" width="172" height="18" fill="#12386B"/><text x="18" y="29" font-size="15" font-weight="700" fill="#FFFFFF">Month 2</text></g>
+    <g transform="translate(424,118)"><g filter="url(#cSh)"><rect width="172" height="244" rx="18" fill="#FFFFFF" stroke="#DCE5F2" stroke-width="2"/></g><rect width="172" height="44" rx="18" fill="#0B2440"/><rect y="26" width="172" height="18" fill="#0B2440"/><text x="18" y="29" font-size="15" font-weight="700" fill="#FFFFFF">Month 3</text></g>
+  </g>
+  <!-- day dots: 6 cols x 5 rows per card -->
+  <g>
+    <!-- Month 1 dots (origin 44,118 + inset) -->
+    <g transform="translate(60,176)">
+      <g fill="#DDE6F3">
+        <circle cx="0" cy="0" r="7"/><circle cx="28" cy="0" r="7"/><circle cx="56" cy="0" r="7"/><circle cx="84" cy="0" r="7"/><circle cx="112" cy="0" r="7"/><circle cx="140" cy="0" r="7"/>
+        <circle cx="0" cy="30" r="7"/><circle cx="28" cy="30" r="7"/><circle cx="56" cy="30" r="7"/><circle cx="84" cy="30" r="7"/><circle cx="112" cy="30" r="7"/><circle cx="140" cy="30" r="7"/>
+        <circle cx="0" cy="60" r="7"/><circle cx="28" cy="60" r="7"/><circle cx="56" cy="60" r="7"/><circle cx="84" cy="60" r="7"/><circle cx="112" cy="60" r="7"/><circle cx="140" cy="60" r="7"/>
+        <circle cx="0" cy="90" r="7"/><circle cx="28" cy="90" r="7"/><circle cx="56" cy="90" r="7"/><circle cx="84" cy="90" r="7"/><circle cx="112" cy="90" r="7"/><circle cx="140" cy="90" r="7"/>
+        <circle cx="0" cy="120" r="7"/><circle cx="28" cy="120" r="7"/><circle cx="56" cy="120" r="7"/><circle cx="84" cy="120" r="7"/><circle cx="112" cy="120" r="7"/><circle cx="140" cy="120" r="7"/>
+      </g>
+      <circle cx="28" cy="0" r="7" fill="#2563EB"/><circle cx="112" cy="30" r="7" fill="#2563EB"/><circle cx="0" cy="60" r="7" fill="#2563EB"/><circle cx="84" cy="90" r="7" fill="#E6A93B"/><circle cx="56" cy="120" r="7" fill="#2563EB"/>
+    </g>
+    <!-- Month 2 dots (origin 234) -->
+    <g transform="translate(250,176)">
+      <g fill="#DDE6F3">
+        <circle cx="0" cy="0" r="7"/><circle cx="28" cy="0" r="7"/><circle cx="56" cy="0" r="7"/><circle cx="84" cy="0" r="7"/><circle cx="112" cy="0" r="7"/><circle cx="140" cy="0" r="7"/>
+        <circle cx="0" cy="30" r="7"/><circle cx="28" cy="30" r="7"/><circle cx="56" cy="30" r="7"/><circle cx="84" cy="30" r="7"/><circle cx="112" cy="30" r="7"/><circle cx="140" cy="30" r="7"/>
+        <circle cx="0" cy="60" r="7"/><circle cx="28" cy="60" r="7"/><circle cx="56" cy="60" r="7"/><circle cx="84" cy="60" r="7"/><circle cx="112" cy="60" r="7"/><circle cx="140" cy="60" r="7"/>
+        <circle cx="0" cy="90" r="7"/><circle cx="28" cy="90" r="7"/><circle cx="56" cy="90" r="7"/><circle cx="84" cy="90" r="7"/><circle cx="112" cy="90" r="7"/><circle cx="140" cy="90" r="7"/>
+        <circle cx="0" cy="120" r="7"/><circle cx="28" cy="120" r="7"/><circle cx="56" cy="120" r="7"/><circle cx="84" cy="120" r="7"/><circle cx="112" cy="120" r="7"/><circle cx="140" cy="120" r="7"/>
+      </g>
+      <circle cx="0" cy="0" r="7" fill="#12386B"/><circle cx="84" cy="0" r="7" fill="#E6A93B"/><circle cx="56" cy="60" r="7" fill="#12386B"/><circle cx="140" cy="90" r="7" fill="#12386B"/><circle cx="28" cy="120" r="7" fill="#12386B"/>
+    </g>
+    <!-- Month 3 dots (origin 424) -->
+    <g transform="translate(440,176)">
+      <g fill="#DDE6F3">
+        <circle cx="0" cy="0" r="7"/><circle cx="28" cy="0" r="7"/><circle cx="56" cy="0" r="7"/><circle cx="84" cy="0" r="7"/><circle cx="112" cy="0" r="7"/><circle cx="140" cy="0" r="7"/>
+        <circle cx="0" cy="30" r="7"/><circle cx="28" cy="30" r="7"/><circle cx="56" cy="30" r="7"/><circle cx="84" cy="30" r="7"/><circle cx="112" cy="30" r="7"/><circle cx="140" cy="30" r="7"/>
+        <circle cx="0" cy="60" r="7"/><circle cx="28" cy="60" r="7"/><circle cx="56" cy="60" r="7"/><circle cx="84" cy="60" r="7"/><circle cx="112" cy="60" r="7"/><circle cx="140" cy="60" r="7"/>
+        <circle cx="0" cy="90" r="7"/><circle cx="28" cy="90" r="7"/><circle cx="56" cy="90" r="7"/><circle cx="84" cy="90" r="7"/><circle cx="112" cy="90" r="7"/><circle cx="140" cy="90" r="7"/>
+        <circle cx="0" cy="120" r="7"/><circle cx="28" cy="120" r="7"/><circle cx="56" cy="120" r="7"/><circle cx="84" cy="120" r="7"/><circle cx="112" cy="120" r="7"/><circle cx="140" cy="120" r="7"/>
+      </g>
+      <circle cx="56" cy="0" r="7" fill="#0B2440"/><circle cx="0" cy="30" r="7" fill="#0B2440"/><circle cx="112" cy="60" r="7" fill="#E6A93B"/><circle cx="28" cy="90" r="7" fill="#0B2440"/><circle cx="140" cy="120" r="7" fill="#0B2440"/>
+    </g>
+  </g>
+</svg>
